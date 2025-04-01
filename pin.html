@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Lock</title>
+    <link href="css/style3.css" rel="stylesheet" type="text/css">
+
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+<div class="hero-header">
+	<div class="wrapper1">
+<header>
+	<div class="logo">
+		<div class="logo-text">Ivanna Huynh</div>
+	</div>
+<nav>
+	<div class="togglebtn">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<ul class="navlinks">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</nav>
+</header>
+	<div class="container">
+                 
+		<div class="hero-text">
+			<h2>Pin Lock</h2>
+			<hr>
+		</div>
+				
+	</div>
+	</div>
+</div>
+<!---hero ends here-->
+
+<div class="wrapper2">
+	
+	<div class="img-gallery"> 
+		<img src="images/img0.jpg">
+		<p>Blue Monarch is a soda beverage made with 100% organic ingredients. The flavors are lemonade, peach, and apple. However, all three beverages are mixed with a flower called Clitoria ternatea, also known as butterfly pea or blue tea. Hence, our brand name is Blue Monarch because it is related to a butterfly and its natural colors.</p>
+	</div>
+		<div id="box1"></div>
+	<div class="img-gallery"> 
+		<img src="images/img0.jpg">
+	</div>
+		<div id="box2"></div>
+	<div class="img-gallery"> 
+	  <img src="images/img0.jpg">
+	</div>
+		<div id="box3"></div>
+	<div class="img-gallery"> 
+		<img src="images/img0.jpg">
+	</div>
+</div>
+	
+<!---typed js for typing text effect-->	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+	
+<footer></footer>
+<footer>Copyright Ivanna Huynh 2025</footer>
+	
+</body>
+</html>
